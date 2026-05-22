@@ -10,6 +10,8 @@
 
 body{
     font-family:Mario;
+    color: var(--lavender-grey);
+    background-color: var(--twilight-indigo);
 }
 
 h1{
