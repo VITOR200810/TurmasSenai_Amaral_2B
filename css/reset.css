@@ -1,0 +1,36 @@
+css/* 1. Altera o modelo de caixa para incluir bordas e preenchimentos no tamanho total */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove margens padrões de elementos comuns */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Garante que a altura da página ocupe toda a tela e melhora a rolagem */
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 4. Melhora a renderização de elementos de mídia */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 5. Remove fontes padrões de elementos de formulário */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 6. Evita que quebras de linha estranhas aconteçam em títulos e parágrafos */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}

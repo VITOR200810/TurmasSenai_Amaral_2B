@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+@import "reset.css";
+@import "cores.css";
+
+@font-face{
+    font-family:Mario;
+    src: url(fontes/retro_mario/RetroMario-Regular.otf);
+}
+
+body{
+    font-family:Mario;
+    color: var(--lavender-grey);
+    background-color: var(--twilight-indigo);
+}
+
+h1{
+    font-size: larger;
+    font-style: normal;
+    font-family: Mario;
+}

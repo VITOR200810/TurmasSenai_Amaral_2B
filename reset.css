@@ -1,0 +1,38 @@
+
+/* 1. Altera o modelo de box-sizing para facilitar o cálculo de tamanhos */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove margens padrão que mudam entre navegadores */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Garante que a altura da página ocupe todo o viewport */
+html, body {
+  height: 100%;
+}
+
+/* 4. Melhora a altura de linha e suaviza fontes no MacOS */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Torna imagens e elementos de mídia mais fáceis de trabalhar */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Remove heranças problemáticas de fontes em formulários */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 7. Evita que quebras de linha estranhas aconteçam em títulos e textos */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
