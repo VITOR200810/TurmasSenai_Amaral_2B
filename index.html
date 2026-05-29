@@ -1,105 +1,132 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <!-- TAG RESPONSIVIDADE --> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content=" essa e uma pagina modelo" />    
-    <meta name="author" content="Vitor" />    
-    <link rel="icon" type="image/png" href="favicon.png" />  
-    <meta name="keywords" content="doces, bolos animados, bolo bom ou gostoso, bolo barato pra aniversario,
-    ">   
-    
-    <title>TESTE Página</title>
-    <link rel="stylesheet" href="css/estilos.css">
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <!-- TAG RESPONSIVIDADE --> 
+        <meta name="viewport" content="width=device-width, 
+        initial-scale=1.0">
+        <meta name="description" content="Esse é uma página modelo">
+        <meta name="keywords" content="sites, web, desenvolvimento backend">
+        <meta name="author" content="Alessandra Luiza, costaalessandra24@gmail.com, 55301397877">
+        <title>HOME:GESTÃO DE TURMAS DO SENAI</title>
+        <!-- ICONE DO MEU SITE --> 
+        <!-- <link rel="icon" type="image/x-icon" href="https://www.w3schools.com/favicon.ico"  >             -->
+        <link rel="icon" type="image/jpg" href="favicon.jpg"  >
+        <link rel="stylesheet" href="sytles.css">
+        <!-- TESTE VIA GITHUB -->
+    </head>
 
-
-</head>
-<body>
-    <header>
-        <h1> Vitinho</h1>
-        <p> vitinho sobre JESUS</p>
-        <nav>
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">CONTATO</a></li>
-                <li><a href="#">NOTICIAS</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div>
-        <picture>
-            <source >
-            <img src="img/white.svg" alt="banner">
-        </picture>
-    </div>
-    <div class="senai mk">
-        <h1> SENAI MARINQUI</h1>
-
-        <div class="turmas">
-            <h2>TURMAS - AMARAL - 2A</h2>
-            <section>
+    <body>
+        <header>
+            <nav class="menu ">
                 <ul>
-                    <li> Gabriel</li>
+                    <li><a href="#">Lellis Ito - Turma A</a></li>
+                    <li><a href="#">Lellis Ito - Turma B</a></li>
+                    <li><a href="#">Amaral - Turma A</a></li>
+                    <li><a href="#">Amaral - Turma B</a></li>
                 </ul>
-            </section>
-
-        <div class="turmas">
-            <h2>TURMAS - AMARAL - 2B</h2>
-            <section>
-                <ul>
-                    <li> alaan</li>
-                    <li>  kaiqui </li>
-                    <li> Vitor</li>
-                </ul>
-            </section>
-
-
+            </nav>
+        </header>
+        
+        <div>
+            <picture>  
+                <source media="(max-width:650px)" srcset="img/banner-600_350.svg">
+                <source media="(max-width:465px)" srcset="img/banner-450_200.svg">                 
+                <img src="img/white.svg" alt="banner">
+            </picture>
         </div>
-        </div>
-    </div>
+       
+        <section class="senai mk" >
+            <section id="turmas">
+                <h1>SENAI MAIRINQUE</h1>
 
-    <section headingoffset="1">
-        <section>
-            <h1>TURMAS DE<mark><abbr title="DESENVOLVIMENTO DE SISTEMAS">DS</abbr></mark></h1>
-            <header><h2></h2></header>
-            <section>
-                <header><h2>LELLIS ITO - A</h2></header>
-                <div>
-                    <ul class="lista-alunas lellis" id="alunosLellisItoA">
-                        <li>Maísa</li>
-                        <li>..</li>
-                        <li>..</li>
-                    </ul>
-                </div>
-                <footer>
-                    <div>Quantidade de Alunos:</div>
-                        <p id="qtdAlunosLellisItoA"><mark>0</mark></p>
-                </footer>
+                <section>
+                    <header>Lellis Ito - Turma A</header>
+                    <article>
+                        <ul class="listaAlunos" id="alunosLellis_A">
+                            <li>Christopher</li>
+                            <li>Deuel</li>
+                            <li>Gabriel</li>
+                            <li>Hebert</li>
+                            <li>Lara de Brito</li>
+                            <li>Lara de Marco</li>
+                            <li>Maisa</li>
+                            <li>Maria</li>
+                            <li>Mariana</li>
+                            <li>Murilo</li>
+                            <li>Rafaeli</li>
+                        </ul>
+                    </article>
+                    <footer>
+                        <h3>Quantidade de alunos 
+                            <mark>
+                                <p id="qtdAlunosLellis_A">0</p>
+                            </mark></h3>
+                    </footer>
+                </section>
 
+                <section>
+                    <header>Lellis Ito - Turma B</header>
+                    <article>
+                        <ul class="listaAlunos" id="alunosLellis_B">
+                            <li>João</li>
+                            <li>Rafael</li>
+                            <li>...</li>
+                        </ul>
+                    </article>
+                    <footer>
+                        <h3>Quantidade de alunos
+                            <p id="qtdAlunosLellis_B">10</p>
+
+                            </h3>
+                    </footer>
+                </section>
+
+                <section class="sala turma_A amaral ">
+                    <header>Pinto do Amaral - Turma A</header>
+                    <article>
+                        <ul>
+                            <li>João</li>
+                            <li>Rafael</li>
+                            <li>...</li>
+                        </ul>
+                    </article>
+                    <footer>
+                        <h3>Quantidade de alunos <mark>10</mark></h3>
+                    </footer>
+                </section>
+
+                <section class="sala turma_B amaral ">
+                    <header>Pinto do Amaral - Turma B</header>
+                    <article>
+                        <ul>
+                            <li>João</li>
+                            <li>Rafael</li>
+                            <li>...</li>
+                        </ul>
+                    </article>
+                    <footer>
+                        <h3>Quantidade de alunos <mark>10</mark></h3>
+                    </footer>
+                </section>
             </section>
 
-            <section headingoffset="1">
-        <section>
-            <h1>TURMAS DE<mark><abbr title="DESENVOLVIMENTO DE SISTEMAS">DS</abbr></mark></h1>
-            <header><h2></h2></header>
-            <section>
-                <header><h2>LELLIS ITO - B</h2></header>
-                <div>
-                    <ul class="lista-alunas lellis" id="alunosLellisItoA">
-                        <li> Gabriele</li>
-                        <li>. maite.</li>
-                        <li>. lauro.</li>
-                    </ul>
-                </div>
-                <footer>
-                    <div>Quantidade de Alunos:</div>
-                        <p id="qtdAlunosLellisItoA"><mark>0</mark></p>
-                </footer>
+        </section>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <hr>
+        <footer>
+            <h3>Desenvolvido por: Prof. <mark><b>Gregorio</b></mark></h3>
+        </footer>
 
-            </section>
-        </section>
-        </section>
-    </section>
+    <script>
+        function contarQuantidadeAlunosTurma(lista, qtd) {
+            const listaAlunos = document.getElementById(lista);
+            const quantidade = listaAlunos.querySelectorAll("li").length;
+            document.getElementById(qtd).textContent = quantidade;
+        }
+        contarQuantidadeAlunosTurma('alunosLellis_A', 'qtdAlunosLellis_A');
+
+    </script>
+        
     </body>
 </html>

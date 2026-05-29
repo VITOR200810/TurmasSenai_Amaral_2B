@@ -1,16 +1,75 @@
-@charset "UTF-8";
+  @charset "UTF-8";
 @import "reset.css";
 @import "cores.css";
 
-@font-face{
-    font-family: pixel;
-    src: url(fonts/PixelHour.ttf);
-}
+
+/* @font-face {
+     font-family: Fortnite;
+     src: url(fonts/fortnite/fortnite.otf)
+ } */
+
+@font-face {
+     font-family: Mario;
+     src: url(fonts/retro_mario/RetroMario-Regular.otf)
+ }
+
 body{
-    background-color: var(--baltic-blue);
+     color: var(--platinum);
+     font-family: Mario; 
+     background-color: var(--midnight-violet);
+     background-color: rgb(238, 227, 202);
+ }
 
-    color: var(--bright-snow);
-    font-family: pixel ;
-    
+ 
+header {
+            background-color: rgb(14, 171, 199);
+            text-align: center;
+        }
 
-}
+        .menu ul {
+            list-style: none;
+        }
+
+        .menu ul li {
+            display: inline-block;
+            padding: 20px;
+            border: 1px solid #000;
+            background-color: aqua;
+        }
+
+        section {
+            /* background-color: aquamarine; */
+        }
+
+        /* section section{
+           font-size: 0;
+        }    */
+        .turmas {
+            display: inline-block;
+            vertical-align: top;
+            background-color: burlywood;
+            min-height: 300px;
+            width: 100%;
+            min-height: 350px;
+            border: 2px solid #000;
+            box-sizing: border-box;
+        }
+
+        .turmas footer {
+            background-color: red;
+        }
+
+       .turmas footer h3 {
+            font-size: smaller;
+        }
+        .turmas
+        .listaAlunos li {
+            padding: 5px;
+        }          
+            
+            
+            
+            
+            
+            
+            
